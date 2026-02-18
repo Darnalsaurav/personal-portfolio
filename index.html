@@ -1,332 +1,489 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.css">
-     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <title>Saurav Darnal - Portfolio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <title>Saurav Darnal - Portfolio</title>
 </head>
+
 <body>
-    <nav>
-        <div class="nav-links">
-            <a href="#hero-content">Home</a>
-            <a href="#about-container">About Me</a>
-             <a href="#projects-section">Projects</a>
-            <a href="#contact-section">Contact</a>
-        </div>
-        <div class="logo">saurav darnal</div>
-        <div class="nav-right">
-            <div class="social-icons">
-                <a href="https://dribbble.com/saurav-darnal" class="social-icon">🌐</a>
-                <a href="https://www.behance.net/sauravdarnal" class="social-icon">Bē</a>
-                <a href="https://www.linkedin.com/in/saurav-darnal-6b306a289/" class="social-icon">in</a>
-            </div>
-            <a href="#hire" class="hire-btn">Hire Me!</a>
-            <div class="hamburger" id="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </div>
-    </nav>
+  <nav>
+    <div class="nav-links">
+      <a href="#hero-content">Home</a>
+      <a href="#about">About Me</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <div class="logo">saurav darnal</div>
+    <div class="nav-right">
+      <div class="social-icons">
+        <a href="https://dribbble.com/saurav-darnal" class="social-icon">🌐</a>
+        <a href="https://www.behance.net/sauravdarnal" class="social-icon">Bē</a>
+        <a href="https://www.linkedin.com/in/saurav-darnal-6b306a289/" class="social-icon">in</a>
+      </div>
+      <!-- <a href="#hire" class="hire-btn">Hire Me!</a> -->
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </nav>
 
-    <section id="hero-content" class="hero">
-        <div class="hero-bg-text">UI/UX DESIGNER</div>
-        
-         <div class="hero-content">
-            <div class="text-container">
-                <h2 class="greeting">Hi, I am Saurav Darnal</h2>
-                <h1 class="title">
-                    Product Design, UI/UX<br>
-                    Frontend Developer
-                </h1>
-            </div>
-            <a href="#contact-section" class="contact-btn">Contact Me</a>
-        </div>
-        
-        <div class="hero-image">
-            <div class="image-container">
-                <div class="blob-bg">
-                    <img src="/images/WhatsApp Image 2026-01-12 at 12.17.53 PM.jpeg" alt="Person Image" class="person-img">
-                </div>
-               
-            </div>
-        </div>
-        
-    </section>
-    
-    <div id="about-container">
-        <div id="about-header">
-            <h1 id="about-title">About Me</h1>
-            <p id="about-description">
-                I'm a passionate UI/UX designer, Product designer with a strong focus on mobile and web applications. I enjoy creating intuitive interfaces that feel natural and effortless for users.
-            </p>
-        </div>
+  <section id="hero-content" class="hero">
+    <div class="hero-bg-text">UI/UX DESIGNER</div>
 
-        <div id="skills-container">
-            <div class="skills-column">
-                <h3>Designing Tools</h3>
-                
-                <div class="skill-item">
-                    <div class="skill-header">
-                        <div class="skill-icon">
-                          <i class="fa-brands fa-figma"></i>
-                        </div>
-                        <span class="skill-name">Figma</span>
-                        <span class="skill-percentage">90%</span>
-                    </div>
-                    <div class="skill-bar">
-                        <div class="skill-progress" style="width: 90%;"></div>
-                    </div>
-                </div>
-
-                <div class="skill-item">
-                    <div class="skill-header">
-                        <div class="skill-icon">
-                            <i class="fa-brands fa-framer"></i>
-                        </div>
-                        <span class="skill-name">Framer</span>
-                        <span class="skill-percentage">70%</span>
-                    </div>
-                    <div class="skill-bar">
-                        <div class="skill-progress" style="width: 70%;"></div>
-                    </div>
-                </div>
-
-                <div class="skill-item">
-                    <div class="skill-header">
-                        <div class="skill-icon">
-                            <i class="fab fa-adobe ps-color"></i>
-                        </div>
-                        <span class="skill-name">Adobe Photoshop</span>
-                        <span class="skill-percentage">60%</span>
-                    </div>
-                    <div class="skill-bar">
-                        <div class="skill-progress" style="width: 60%;"></div>
-                    </div>
-                </div>
-
-                <div class="skill-item">
-                    <div class="skill-header">
-                        <div class="skill-icon">
-                            <i class="fab fa-adobe ai-color"></i>
-                        </div>
-                        <span class="skill-name">Adobe illustrator</span>
-                        <span class="skill-percentage">60%</span>
-                    </div>
-                    <div class="skill-bar">
-                        <div class="skill-progress" style="width: 60%;"></div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="skills-column">
-                <h3>Coding Tools</h3>
-                
-                <div class="skill-item">
-                    <div class="skill-header">
-                        <div class="skill-icon">
-                            <i class="fab fa-html5 html-color"></i>
-                        </div>
-                        <span class="skill-name">HTML</span>
-                        <span class="skill-percentage">90%</span>
-                    </div>
-                    <div class="skill-bar">
-                        <div class="skill-progress" style="width: 90%;"></div>
-                    </div>
-                </div>
-
-                <div class="skill-item">
-                    <div class="skill-header">
-                        <div class="skill-icon">
-                            <i class="fab fa-css3-alt css-color"></i>
-                        </div>
-                        <span class="skill-name">CSS</span>
-                        <span class="skill-percentage">90%</span>
-                    </div>
-                    <div class="skill-bar">
-                        <div class="skill-progress" style="width: 90%;"></div>
-                    </div>
-                </div>
-
-                <div class="skill-item">
-                    <div class="skill-header">
-                        <div class="skill-icon">
-                            <i class="fab fa-js js-color"></i>
-                        </div>
-                        <span class="skill-name">JavaScript</span>
-                        <span class="skill-percentage">70%</span>
-                    </div>
-                    <div class="skill-bar">
-                        <div class="skill-progress" style="width: 70%;"></div>
-                    </div>
-                </div>
-
-                <div class="skill-item">
-                    <div class="skill-header">
-                        <div class="skill-icon">
-                            <i class="fab fa-react react-color"></i>
-                        </div>
-                        <span class="skill-name">React</span>
-                        <span class="skill-percentage">60%</span>
-                    </div>
-                    <div class="skill-bar">
-                        <div class="skill-progress" style="width: 60%;"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div id="divider"></div>
-
-        <div id="services-header">
-            <h2 id="services-title">What do I help?</h2>
-        </div>
-
-        <div id="services-grid">
-            <div class="service-item" id="service-website">Website Design</div>
-            <div class="service-item" id="service-mobile">Mobile App Design</div>
-            <div id="center-circle"></div>
-            <div class="service-item" id="service-prototyping">Prototyping & Wireframing</div>
-            <div class="service-item" id="service-product">Product Design</div>
-        </div>
-    </section>
-       <div id="main-container">
-        <!-- Projects Section -->
-        <section id="projects-section">
-            <div id="projects-header">
-                <h1 id="projects-title">Projects</h1>
-                <div id="social-icons">
-                    <a href="https://dribbble.com/saurav-darnal" class="social-icon" id="dribbble-icon">
-                        <i class="fab fa-dribbble"></i>
-                    </a>
-                    <a href="https://www.behance.net/sauravdarnal" class="social-icon" id="behance-icon">
-                        <i class="fab fa-behance"></i>
-                    </a>
-                </div>
-            </div>
-
-            <div id="mockups-section">
-                <h2 id="mockups-title">Mockups</h2>
-                <div id="mockups-grid">
-                    <div class="mockup-card" id="mockup-8">
-                        <img src="/images/app mockup copy headphone.jpg" alt="Mockup 8" class="mockup-image">
-                    </div>
-                   
-                     <div class="mockup-card" id="mockup-2">
-                        <img src="/images/login page mockup blue.jpg" alt="Mockup 2" class="mockup-image">
-                    </div>
-                    <div class="mockup-card" id="mockup-2">
-                        <img src="/images/Scene 9 copy.jpg" alt="Mockup 2" class="mockup-image">
-                    </div>
-                     <div class="mockup-card" id="mockup-1">
-                        <img src="/images/192 skin care mockup final ready to upload.jpg" alt="Mockup 1" class="mockup-image">
-                    </div>
-                    <div class="mockup-card" id="mockup-3">
-                        <img src="/images/10 (dark, light, color) copy.jpg" alt="Mockup 3" class="mockup-image">
-                    </div>
-                    <div class="mockup-card" id="mockup-4">
-                        <img src="/images/Phone_Air copy.jpg" alt="Mockup 4" class="mockup-image">
-                    </div>
-                    <div class="mockup-card" id="mockup-5">
-                        <img src="/images/192 copy.jpg" alt="Mockup 5" class="mockup-image">
-                    </div>
-                    <div class="mockup-card" id="mockup-6">
-                        <img src="/images/Scene 29 copy.jpg" alt="Mockup 6" class="mockup-image">
-                    </div>
-                    <div class="mockup-card" id="mockup-7">
-                        <img src="/images/M003T1516 B Macbook Mockup 09sep25 copy.jpg" alt="Mockup 7" class="mockup-image">
-                    </div>
-                    <div class="mockup-card" id="mockup-8">
-                        <img src="/images/4 copy.jpg" alt="Mockup 8" class="mockup-image">
-                    </div>
-                       
-                </div>
-            </div>
-        </section>
-
-        <!-- Contact Section -->
-        <section id="contact-section">
-            <div id="contact-header">
-                <h2 id="contact-title">Contact Us</h2>
-            </div>
-
-            <div id="contact-content">
-                <h3 id="contact-heading">Let's Build Something Amazing.</h3>
-                
-                <p id="contact-description">
-                    I'm Currently available for freelance work and full time opportunities. Have a project in mind? Let's Chat.
-                </p>
-
-                <div id="info-section">
-                    <p id="info-label">Info</p>
-                    <a href="mailto:darnalsaurav02@gmail.com" id="email-link">Email: darnalsaurav07@gmail.com</a>
-                    <p id="location">Location: kathmandu, Nepal</p>
-                </div>
-
-                <div id="contact-social-icons">
-                    <a href="https://www.linkedin.com/in/saurav-darnal-6b306a289/" class="contact-social-link" id="linkedin-icon">
-                        <i class="fab fa-linkedin"></i>
-                    </a>
-                    <a href="#" class="contact-social-link" id="facebook-icon">
-                        <i class="fab fa-facebook"></i>
-                    </a>
-                    <a href="#" class="contact-social-link" id="instagram-icon">
-                        <i class="fab fa-instagram"></i>
-                    </a>
-                    <a href="#" class="contact-social-link" id="whatsapp-icon">
-                        <i class="fab fa-whatsapp"></i>
-                    </a>
-                    <a href="https://github.com/Darnalsaurav" class="contact-social-link" id="github-icon">
-                        <i class="fab fa-github"></i>
-                    </a>
-                    <a href="#" class="contact-social-link" id="twitter-icon">
-                        <i class="fab fa-x-twitter"></i>
-                    </a>
-                </div>
-            </div>
-        </section>
+    <div class="hero-content">
+      <div class="text-container">
+        <h2 class="greeting">Hi, I am Saurav Darnal</h2>
+        <h1 class="title">
+          Product Design, UI/UX<br>
+          Frontend Developer
+        </h1>
+      </div>
+      <a href="#contact-section" class="contact-btn">Contact Me</a>
     </div>
 
-    <!-- Footer -->
-    <footer id="footer">
-        <p id="copyright">©2024 Saurav Darnal. All rights reserved.</p>
-        <p id="designer-credit">Designed by Saurav Darnal</p>
+    <div class="hero-image">
+      <div class="image-container">
+        <div class="blob-bg">
+          <img src="/images/WhatsApp Image 2026-01-12 at 12.17.53 PM.jpeg" alt="Person Image" class="person-img">
+        </div>
+
+      </div>
+    </div>
+
+  </section>
+
+  <section id="about" class="section">
+    <h2 class="section-title">About Me</h2>
+    <p class="bio">
+      I'm a passionate UI/UX designer. Product designer with a strong focus on mobile and web applications. I enjoy
+      crafting intuitive interfaces that feel natural and effortless to users.
+    </p>
+
+    <div class="tools-grid">
+      <!-- Designing Tools Column -->
+      <div class="tools-col">
+        <h3>Designing Tools</h3>
+
+        <div class="tool-item">
+          <!-- Figma icon color: #f24e1e -->
+          <div class="tool-icon" style="background:#fff0ec;">
+            <i class="fa-brands fa-figma" style="color:#f24e1e;"></i>
+          </div>
+          <div class="tool-info">
+            <div class="tool-name">Figma</div>
+            <div class="skill-bar">
+              <div class="skill-bar-fill" style="width:95%"></div>
+            </div>
+          </div>
+          <span class="tool-pct">95%</span>
+        </div>
+
+        <div class="tool-item">
+          <!-- Canva green -->
+          <div class="tool-icon" style="background:#e6f9f0;">
+            <i class="fa-solid fa-pen-nib" style="color:#00c4b4;"></i>
+          </div>
+          <div class="tool-info">
+            <div class="tool-name">Canva</div>
+            <div class="skill-bar">
+              <div class="skill-bar-fill" style="width:77%"></div>
+            </div>
+          </div>
+          <span class="tool-pct">77%</span>
+        </div>
+
+        <div class="tool-item">
+          <!-- Figma secondary -->
+          <div class="tool-icon" style="background:#fff0ec;">
+            <i class="fa-solid fa-vector-square" style="color:#f24e1e;"></i>
+          </div>
+          <div class="tool-info">
+            <div class="tool-name">Framer</div>
+            <div class="skill-bar">
+              <div class="skill-bar-fill" style="width:85%"></div>
+            </div>
+          </div>
+          <span class="tool-pct">85%</span>
+        </div>
+
+        <div class="tool-item">
+          <!-- Framer -->
+          <div class="tool-icon" style="background:#eef0ff;">
+            <i class="fa-solid fa-cube" style="color:#0055ff;"></i>
+          </div>
+          <div class="tool-info">
+            <div class="tool-name">Adobe illustrator</div>
+            <div class="skill-bar">
+              <div class="skill-bar-fill" style="width:70%"></div>
+            </div>
+          </div>
+          <span class="tool-pct">70%</span>
+        </div>
+      </div>
+
+
+      <!-- Coding Tools Column -->
+      <div class="tools-col">
+        <h3>Coding Tools</h3>
+
+        <div class="tool-item">
+          <!-- HTML5 -->
+          <div class="tool-icon" style="background:#fff3ea;">
+            <i class="fa-brands fa-html5" style="color:#e44d26;"></i>
+          </div>
+          <div class="tool-info">
+            <div class="tool-name">HTML</div>
+            <div class="skill-bar">
+              <div class="skill-bar-fill" style="width:90%"></div>
+            </div>
+          </div>
+          <span class="tool-pct">90%</span>
+        </div>
+
+        <div class="tool-item">
+          <!-- CSS3 -->
+          <div class="tool-icon" style="background:#eaf3ff;">
+            <i class="fa-brands fa-css3-alt" style="color:#264de4;"></i>
+          </div>
+          <div class="tool-info">
+            <div class="tool-name">CSS</div>
+            <div class="skill-bar">
+              <div class="skill-bar-fill" style="width:60%"></div>
+            </div>
+          </div>
+          <span class="tool-pct">60%</span>
+        </div>
+
+        <div class="tool-item">
+          <!-- JavaScript -->
+          <div class="tool-icon" style="background:#fffbe6;">
+            <i class="fa-brands fa-js" style="color:#f7df1e;"></i>
+          </div>
+          <div class="tool-info">
+            <div class="tool-name">Java Script</div>
+            <div class="skill-bar">
+              <div class="skill-bar-fill" style="width:60%"></div>
+            </div>
+          </div>
+          <span class="tool-pct">60%</span>
+        </div>
+
+        <div class="tool-item">
+          <!-- React -->
+          <div class="tool-icon" style="background:#e6f8fd;">
+            <i class="fa-brands fa-react" style="color:#61dafb;"></i>
+          </div>
+          <div class="tool-info">
+            <div class="tool-name">React</div>
+            <div class="skill-bar">
+              <div class="skill-bar-fill" style="width:40%"></div>
+            </div>
+          </div>
+          <span class="tool-pct">40%</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =================== WHAT DO I HELP =================== -->
+  <section id="help">
+    <h2 class="section-title">What do I help ?</h2>
+    <div class="help-grid">
+      <div class="help-item">
+        <i class="fa-solid fa-desktop"></i>
+        Website Design
+      </div>
+      <div class="help-item">
+        <i class="fa-solid fa-mobile-screen"></i>
+        Mobile App Design
+      </div>
+      <div class="help-item">
+        <i class="fa-solid fa-pencil-ruler"></i>
+        Prototyping &amp; Wireframing
+      </div>
+      <div class="help-item">
+        <i class="fa-solid fa-layer-group"></i>
+        Product Design
+      </div>
+    </div>
+  </section>
+
+  <!-- =================== PROJECTS =================== -->
+  <section id="projects">
+    <h2 class="section-title">Projects</h2>
+
+    <!-- Platform links (Dribbble + Behance) -->
+    <div class="project-icons">
+      <a href="#" class="project-icon-btn" title="Dribbble">
+        <i class="fa-brands fa-dribbble" style="color:#ea4c89;"></i>
+      </a>
+      <a href="#" class="project-icon-btn" title="Behance">
+        <i class="fa-brands fa-behance" style="color:#053eff;"></i>
+      </a>
+    </div>
+
+    <p class="mockups-label">Mockups</p>
+
+    <!-- ── Mockup Carousel ──
+         Add/remove <img> tags below to change slides.
+         Images from Unsplash – update src URLs here.
+    -->
+    <div class="carousel-wrapper">
+
+      <!-- Prev button -->
+      <button class="carousel-btn prev" id="prevBtn" aria-label="Previous">
+        <i class="fa-solid fa-chevron-left"></i>
+      </button>
+
+      <!-- Scrollable track -->
+      <div class="mockup-gallery" id="mockupGallery">
+        <img class="mockup-img" src="/images/app mockup copy headphone.jpg" alt="Mockup 1 " />
+        <img class="mockup-img" src="/images/login page mockup blue.jpg" alt="Mockup 2 " />
+        <img class="mockup-img" src="/images/M003T1516 B Macbook Mockup 09sep25 copy.jpg" alt="Mockup " />
+        <img class="mockup-img" src="/images/Scene 9 copy.jpg" alt="Mockup 4 " />
+        <img class="mockup-img" src="/images/Scene 29 copy.jpg" alt="Mockup 5" />
+        <img class="mockup-img" src="/images/192 skin care mockup final ready to upload.jpg" alt="Mockup 6 " />
+      </div>
+
+      <!-- Next button -->
+      <button class="carousel-btn next" id="nextBtn" aria-label="Next">
+        <i class="fa-solid fa-chevron-right"></i>
+      </button>
+
+    </div>
+
+    <!-- Dot indicators -->
+    <div class="carousel-dots" id="carouselDots"></div>
+
+    <!-- =================== CONTACT =================== -->
+    <section id="contact">
+      <h2 class="section-title">Contact Us</h2>
+
+      <div class="contact-row">
+
+        <!-- Left: Info -->
+        <div class="contact-left">
+          <div class="contact-headline">
+            Let's Build<br />Something<br />Amazing.
+          </div>
+
+          <p class="contact-sub">
+            I'm currently available for freelance work and full-time opportunities.<br />
+            Have a project in mind? Let's chat.
+          </p>
+
+          <!-- Contact details – Update info here -->
+          <div class="contact-details">
+            <span>Info</span>
+            <span>darnalsaurav07@example.com</span>
+            <span>Location: Kathmandu, Nepal</span>
+          </div>
+
+          <!-- Social icons – Update hrefs here -->
+          <div class="social-row">
+            <a href="#" class="linkedin" title="LinkedIn"> <i class="fa-brands fa-linkedin"></i></a>
+            <a href="#" class="facebook" title="Facebook"> <i class="fa-brands fa-facebook"></i></a>
+            <a href="#" class="instagram" title="Instagram"> <i class="fa-brands fa-instagram"></i></a>
+            <a href="#" class="whatsapp" title="WhatsApp"> <i class="fa-brands fa-whatsapp"></i></a>
+            <a href="#" class="github" title="GitHub"> <i class="fa-brands fa-github"></i></a>
+            <a href="#" class="twitter" title="X / Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+          </div>
+        </div>
+
+        <!-- Right: Contact Form Card -->
+        <div class="card">
+          <p class="tag" align="center">Portfolio · UI/UX &amp; Product Design</p>
+          <h1 align="center">Get in touch</h1>
+
+          <form id="form">
+            <div class="field">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="from_name" placeholder="Your name" required />
+            </div>
+
+            <div class="field">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="from_email" placeholder="you@example.com" required />
+            </div>
+
+            <div class="field">
+              <label for="service">Service</label>
+              <select id="service" name="service">
+                <option value="" disabled selected>What do you need?</option>
+                <option>UI / UX Design</option>
+                <option>Product Design</option>
+                <option>Frontend Development</option>
+                <option>Other</option>
+              </select>
+            </div>
+
+            <div class="field">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" placeholder="Tell me about your project…" required></textarea>
+            </div>
+
+            <div class="divider"></div>
+
+            <button type="submit">Send Message</button>
+            <div class="success" id="success">✓ Message sent — I'll reply within 24 hours!</div>
+          </form>
+        </div>
+
+      </div><!-- /.contact-row -->
+    </section>
+
+    <!-- =================== FOOTER =================== -->
+    <footer>
+      <span>© 2024 Saurav Darnal. All rights reserved.</span>
+      <span>Designed by Saurav Darnal</span>
     </footer>
 
     <script>
-        // Mobile Navigation Toggle
+      /* Initialize EmailJS */
+      (function () {
+        emailjs.init("6hJJL3vayS6VFAN9z");
+      })();
+
+      (function () {
+        /* ── Hamburger Menu Toggle ── ... */
+        /* ... existing code inherited ... */
         const hamburger = document.getElementById('hamburger');
         const navLinks = document.querySelector('.nav-links');
+        const links = document.querySelectorAll('.nav-links a');
 
         hamburger.addEventListener('click', () => {
-            hamburger.classList.toggle('active');
-            navLinks.classList.toggle('active');
+          hamburger.classList.toggle('active');
+          navLinks.classList.toggle('active');
+          document.body.style.overflow = navLinks.classList.contains('active') ? 'hidden' : 'auto';
         });
 
-        // Close menu when a link is clicked
-        const navItems = document.querySelectorAll('.nav-links a');
-        navItems.forEach(item => {
-            item.addEventListener('click', () => {
-                hamburger.classList.remove('active');
-                navLinks.classList.remove('active');
-            });
+        links.forEach(link => {
+          link.addEventListener('click', () => {
+            hamburger.classList.remove('active');
+            navLinks.classList.remove('active');
+            document.body.style.overflow = 'auto';
+          });
         });
 
-        // Close menu when clicking outside
-        document.addEventListener('click', (e) => {
-            const isClickInsideNav = navLinks.contains(e.target);
-            const isClickOnHamburger = hamburger.contains(e.target);
-            
-            if (!isClickInsideNav && !isClickOnHamburger && navLinks.classList.contains('active')) {
-                hamburger.classList.remove('active');
-                navLinks.classList.remove('active');
-            }
+        /* ── Carousel Logic ── */
+        const gallery = document.getElementById('mockupGallery');
+        const prevBtn = document.getElementById('prevBtn');
+        const nextBtn = document.getElementById('nextBtn');
+        const dotsWrap = document.getElementById('carouselDots');
+        const images = gallery.querySelectorAll('.mockup-img');
+        const total = images.length;
+
+        function getVisible() {
+          const w = window.innerWidth;
+          if (w <= 480) return 1;
+          if (w <= 768) return 2;
+          return 3;
+        }
+
+        let current = 0;
+
+        function buildDots() {
+          dotsWrap.innerHTML = '';
+          const visible = getVisible();
+          const pages = Math.ceil(total / visible);
+          for (let i = 0; i < pages; i++) {
+            const dot = document.createElement('button');
+            dot.className = 'dot' + (i === 0 ? ' active' : '');
+            dot.setAttribute('aria-label', `Go to slide ${i + 1}`);
+            dot.addEventListener('click', () => goTo(i * visible));
+            dotsWrap.appendChild(dot);
+          }
+        }
+
+        function updateDots() {
+          const visible = getVisible();
+          const page = Math.floor(current / visible);
+          dotsWrap.querySelectorAll('.dot').forEach((d, i) => {
+            d.classList.toggle('active', i === page);
+          });
+        }
+
+        function updateButtons() {
+          if (prevBtn && nextBtn) {
+            prevBtn.disabled = current === 0;
+            nextBtn.disabled = current >= total - getVisible();
+          }
+        }
+
+        function goTo(index) {
+          const visible = getVisible();
+          current = Math.max(0, Math.min(index, total - visible));
+          const imgWidth = images[0].offsetWidth + 20;
+          gallery.scrollTo({ left: current * imgWidth, behavior: 'smooth' });
+          updateDots();
+          updateButtons();
+        }
+
+        if (nextBtn) nextBtn.addEventListener('click', () => goTo(current + getVisible()));
+        if (prevBtn) prevBtn.addEventListener('click', () => goTo(current - getVisible()));
+
+        gallery.addEventListener('scroll', () => {
+          const imgWidth = images[0].offsetWidth + 20;
+          current = Math.round(gallery.scrollLeft / imgWidth);
+          updateDots();
+          updateButtons();
         });
+
+        function init() {
+          buildDots();
+          updateButtons();
+        }
+        init();
+        window.addEventListener('resize', init);
+      })();
+
+      /* ── Form submit handler ── */
+      document.getElementById('form').addEventListener('submit', function (e) {
+        e.preventDefault();
+
+        const btn = this.querySelector('button[type="submit"]');
+        const success = document.getElementById('success');
+
+        btn.disabled = true;
+        btn.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i> Sending…';
+        btn.style.opacity = '0.8';
+
+        /* EmailJS Send Logic */
+        emailjs.sendForm('service_osu3xe8', 'template_4tyqw0j', this)
+          .then(() => {
+            btn.innerHTML = 'Send Message <i class="fa-solid fa-paper-plane"></i>';
+            btn.disabled = false;
+            btn.style.opacity = '1';
+
+            success.style.display = 'block';
+            success.style.color = '#2ecc71';
+            success.innerHTML = '✓ Message sent — I\'ll reply within 24 hours!';
+            this.reset();
+
+            setTimeout(() => success.style.display = 'none', 5000);
+          }, (error) => {
+            btn.innerHTML = 'Send Message <i class="fa-solid fa-paper-plane"></i>';
+            btn.disabled = false;
+            btn.style.opacity = '1';
+
+            success.style.display = 'block';
+            success.style.color = '#e74c3c';
+            success.innerHTML = '✗ Failed to send message. Please try again.';
+            console.error('EmailJS Error:', error);
+          });
+      });
     </script>
+
 </body>
+
 </html>
